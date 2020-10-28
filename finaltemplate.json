@@ -12,7 +12,7 @@
             "type": "string"
         },
         "networkSecurityGroupRules": {
-            "type": "array"
+            "type": "string"
         },
         "subnetName": {
             "type": "string"
@@ -21,10 +21,10 @@
             "type": "string"
         },
         "addressPrefixes": {
-            "type": "array"
+            "type": "string"
         },
         "subnets": {
-            "type": "array"
+            "type": "string"
         },
         "publicIpAddressName": {
             "type": "string"
