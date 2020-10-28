@@ -21,7 +21,7 @@
             "type": "string"
         },
         "addressPrefixes": {
-            "type": "array",
+            "type": "int",
             "allowedValues": [
       1,
       2,
