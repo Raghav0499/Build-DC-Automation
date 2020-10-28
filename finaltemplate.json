@@ -79,8 +79,8 @@
         }
     },
     "variables": {
-        "nsgId": "[resourceId(resourceGroup().name, 'Microsoft.Network/networkSecurityGroups', template-nsg)]",
-        "vnetId": "[resourceId(resourceGroup().name,'Microsoft.Network/virtualNetworks', template-rg-vnet)]",
+        "nsgId": "[concat('template-nsg', uniqueString(resourceGroup().id))]",
+        "vnetId": "[concat('template-rg-vnet', uniqueString(resourceGroup().id))]",
         "subnetRef": "[concat(variables('vnetId'), '/subnets/', Subnet)]",
         "virtualMachineName": "template"
     },
