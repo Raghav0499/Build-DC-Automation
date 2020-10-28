@@ -151,9 +151,6 @@
             "type": "Microsoft.Network/virtualNetworks",
             "apiVersion": "2019-09-01",
             "location": "[parameters('location')]",
-            "dependsOn": [
-                "[concat('Microsoft.Network/networkSecurityGroups/', parameters('networkInterfaceName'))]"
-                ],
             "properties": {
                 "addressSpace": {
                     "addressPrefixes": ["10.0.1.0/24"]
