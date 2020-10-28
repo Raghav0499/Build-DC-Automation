@@ -21,7 +21,8 @@
             "type": "string"
         },
         "addressPrefixes": {
-            "type": "array"
+            "type": "array",
+            "defaultvalue": "10"
         },
         "subnets": {
             "type": "string"
