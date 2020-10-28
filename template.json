@@ -20,9 +20,6 @@
         "virtualNetworkName": {
             "type": "string"
         },
-        "addressPrefixes": {
-            "type": "string"
-        },
         "subnets": {
             "type": "string"
         },
@@ -152,9 +149,6 @@
             "apiVersion": "2019-09-01",
             "location": "[parameters('location')]",
             "properties": {
-                "addressSpace": {
-                    "addressPrefixes": "[parameters('addressPrefixes')]"
-                },
                 "subnets": "[parameters('subnets')]"
             }
         },
