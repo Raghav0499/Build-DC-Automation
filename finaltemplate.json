@@ -81,7 +81,7 @@
     "variables": {
         "nsgId": "[concat('template-nsg', uniqueString(resourceGroup().id))]",
         "vnetId": "[concat('template-rg-vnet', uniqueString(resourceGroup().id))]",
-        "subnetRef": "[concat(variables('vnetId'), Subnet)]",
+        "subnetRef": "concat(variables('vnetId'), Subnet)",
         "virtualMachineName": "template"
     },
     "resources": [
