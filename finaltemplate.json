@@ -113,9 +113,9 @@
             "apiVersion": "2018-10-01",
             "location": "centralindia",
             "dependsOn": [
-                "[concat('Microsoft.Network/networkSecurityGroups/', template-nsg)]",
-                "[concat('Microsoft.Network/virtualNetworks/', template-rg-vnet)]",
-                "[concat('Microsoft.Network/publicIpAddresses/', template-ip)]"
+                "template-nsg",
+                "template-rg-vnet",
+                "template-ip"
             ],
             "properties": {
                 "ipConfigurations": [
